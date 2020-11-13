@@ -7,7 +7,7 @@ function atualiza(){
 function Home() {
     return (
         <div>
-            <title>Gym Training</title>
+            <title>Gym Training ®</title>
             <table border="1" width="100%">
                 <div>
                     <p align="center">
@@ -97,7 +97,7 @@ function Home() {
                             <td align="center"><font size="4" face="tahoma"><Contador /></font></td>      
                         </tr>
                         <tr>
-                            <td><font size="4" face="tahoma">Supino Incl. Halteres</font></td>
+                            <td><font size="4" face="tahoma">Supino Incl. Halt.</font></td>
                             <td align="center"><font size="4" face="tahoma">4X</font></td>
                             <td align="center"><font size="4" face="tahoma">10</font></td>
                             <td align="center"><font size="4" face="tahoma"></font></td>
@@ -118,7 +118,7 @@ function Home() {
                             <td align="center"><font size="4" face="tahoma"><Contador /></font></td>
                         </tr>
                         <tr bgcolor="LightBlue">
-                            <td><font size="4" face="tahoma">Tríceps Coice Halter</font></td>
+                            <td><font size="4" face="tahoma">Tríceps Coice Halt.</font></td>
                             <td align="center"><font size="4" face="tahoma">4X</font></td>
                             <td align="center"><font size="4" face="tahoma">10</font></td>
                             <td align="center"><font size="4" face="tahoma"></font></td>
@@ -192,7 +192,7 @@ function Home() {
                             <td><font size="4" face="tahoma">Panturrilha Máq.</font></td>
                             <td align="center"><font size="4" face="tahoma">4X</font></td>
                             <td align="center"><font size="4" face="tahoma">10</font></td>
-                            <td align="center"><font size="4" face="tahoma">P.C. 2"</font></td>
+                            <td align="center"><font size="4" face="tahoma">PC 2</font></td>
                             <td align="center"><font size="4" face="tahoma"><Contador /></font></td>
                         </tr>
                     </table>
@@ -200,14 +200,16 @@ function Home() {
                     <p align="center">
                         <button onClick={atualiza}><font size="4" face="tahoma">&nbsp;Reload&nbsp;</font></button>
                     </p>
-                </div>
+                </div>                
             </table>
-            <table border="0" width="100%">
-                <tr>
-                    <td align="left"><font size="1" face="tahoma"><a href="mailto:markuz.rocha@gmail.com">Marcos Rocha</a></font></td>
-                    <td align="right"><font size="1" face="tahoma">v1.2</font></td>
-                </tr>
-            </table>
+            <div>
+                <table border="0" width="100%">
+                    <tr>
+                        <td align="left" ><font size="1" face="tahoma"><a href="mailto:markuz.rocha@gmail.com">Marcos Rocha</a></font></td>
+                        <td align="right"><font size="1" face="tahoma">v1.3</font></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }
