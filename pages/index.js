@@ -7,46 +7,51 @@ function atualiza(){
 function Home() {
     return (
         <div>
-            <h1>Gym Training v1.0</h1>
-            <table border="1">
-                <tr bgcolor="#66CDAA">
-                    <th width="150">TREINO 'B'</th>
-                    <th width="70">SÉRIES</th>                    
+            <p align="center">
+                <font size="7" face="tahoma">Gym Training</font>
+            </p>            
+            <table border="0" width="100%" cellpadding="3">
+                <tr bgcolor="RoyalBlue">
+                    <th width="160"><font size="4" face="verdana" color="white">TREINO 'B'</font></th>
+                    <th width="40" ><font size="4" face="verdana" color="white">SÉRIES</font></th>                    
                 </tr>
                 <tr>
-                    <td>Supino Reto Barra</td>
-                    <td><Contador /></td>                    
+                    <td><font size="4" face="tahoma">Supino Reto Barra</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador /></font></td>                    
+                </tr>
+                <tr bgcolor="LightBlue">
+                    <td><font size="4" face="tahoma">Crucifixo</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador1 /></font></td>                    
                 </tr>
                 <tr>
-                    <td>Crucifixo</td>
-                    <td><Contador1 /></td>                    
+                    <td><font size="4" face="tahoma">Supino Incl. Halteres</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador2 /></font></td>
+                </tr>
+                <tr bgcolor="LightBlue">
+                    <td><font size="4" face="tahoma">Flexão de Braços</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador3 /></font></td>
                 </tr>
                 <tr>
-                    <td>Supino Incl. Halteres</td>
-                    <td><Contador2 /></td>
+                    <td><font size="4" face="tahoma">Tríceps Testa Cross</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador4 /></font></td>
                 </tr>
-                <tr>
-                    <td>Flexão de Braços</td>
-                    <td><Contador3 /></td>
-                </tr>
-                <tr>
-                    <td>Tríceps Testa Cross</td>
-                    <td><Contador4 /></td>
-                </tr>
-                <tr>
-                    <td>Tríceps Coice Halter</td>
-                    <td><Contador5 /></td>
+                <tr bgcolor="LightBlue">
+                    <td><font size="4" face="tahoma">Tríceps Coice Halter</font></td>
+                    <td align="center"><font size="4" face="tahoma"><Contador5 /></font></td>
                 </tr>
             </table>
-            <p>
-                <button onClick={atualiza}>Reload</button>
+            <div align="right">
+                <font size="3" face="tahoma">v1.1</font>
+            </div>
+            <p align="center">
+                <button STYLE="padding:8px" onClick={atualiza}><font size="4" face="tahoma">&nbsp;Reload&nbsp;</font></button>
             </p>
         </div>
     )
 }
 
 function Contador(){
-    const [contador,setContador] = useState(1);
+    const [contador,setContador] = useState(0);
 
     function adicionarContador(){
         setContador(contador + 1);
@@ -61,7 +66,7 @@ function Contador(){
 }
 
 function Contador1(){
-    const [contador,setContador1] = useState(1);
+    const [contador,setContador1] = useState(0);
 
     function adicionarContador1(){
         setContador1(contador + 1);
@@ -76,7 +81,7 @@ function Contador1(){
 }
 
 function Contador2(){
-    const [contador,setContador2] = useState(1);
+    const [contador,setContador2] = useState(0);
 
     function adicionarContador2(){
         setContador2(contador + 1);
@@ -91,7 +96,7 @@ function Contador2(){
 }
 
 function Contador3(){
-    const [contador,setContador3] = useState(1);
+    const [contador,setContador3] = useState(0);
 
     function adicionarContador3(){
         setContador3(contador + 1);
@@ -106,7 +111,7 @@ function Contador3(){
 }
 
 function Contador4(){
-    const [contador,setContador4] = useState(1);
+    const [contador,setContador4] = useState(0);
 
     function adicionarContador4(){
         setContador4(contador + 1);
@@ -121,7 +126,7 @@ function Contador4(){
 }
 
 function Contador5(){
-    const [contador,setContador5] = useState(1);
+    const [contador,setContador5] = useState(0);
 
     function adicionarContador5(){
         setContador5(contador + 1);
