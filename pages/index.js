@@ -7,45 +7,84 @@ function atualiza(){
 function Home() {
     return (
         <div>
-            <p align="center">
-                <font size="7" face="tahoma">Gym Training</font>
-            </p>            
-            <table border="0" width="100%" cellpadding="3">
-                <tr bgcolor="RoyalBlue">
-                    <th width="160"><font size="4" face="verdana" color="white">TREINO 'B'</font></th>
-                    <th width="40" ><font size="4" face="verdana" color="white">SÉRIES</font></th>                    
-                </tr>
+            <title>Gym Training</title>
+            <table border="1" width="100%">
+                <div>
+                    <p align="center">
+                        <font size="7" face="tahoma">Gym Training</font>
+                    </p>            
+                    <table border="0" width="100%">
+                        <tr bgcolor="RoyalBlue">
+                            <th width="160" colspan="6"><font size="4" face="verdana" color="white">TREINO 'B'</font></th>
+                        </tr>
+                        <tr bgcolor="RoyalBlue">
+                            <td width="160" align="center"><font size="4" face="verdana" color="white">Exercício</font></td>
+                            <td width="40"  align="center"><font size="4" face="verdana" color="white">Série</font></td>
+                            <td width="40"  align="center"><font size="4" face="verdana" color="white">Rep.</font></td>
+                            <td width="50"  align="center"><font size="4" face="verdana" color="white">Carga</font></td>
+                            <td width="50"  align="center"><font size="4" face="verdana" color="white">Execuções</font></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><font size="4" face="tahoma">Supino Reto Barra</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">10</font></td>
+                            <td align="center"><font size="4" face="tahoma">Bi-Set</font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador /></font></td>
+                            
+                        </tr>
+                        <tr bgcolor="LightBlue">
+                            <td><font size="4" face="tahoma">Crucifixo</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">10</font></td>
+                            <td align="center"><font size="4" face="tahoma">Bi-Set</font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador1 /></font></td>      
+                            
+                        </tr>
+                        <tr>
+                            <td><font size="4" face="tahoma">Supino Incl. Halteres</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">10</font></td>
+                            <td align="center"><font size="4" face="tahoma"></font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador2 /></font></td>
+                            
+                        </tr>
+                        <tr bgcolor="LightBlue">
+                            <td><font size="4" face="tahoma">Flexão de Braços</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">Falha</font></td>
+                            <td align="center"><font size="4" face="tahoma"></font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador3 /></font></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><font size="4" face="tahoma">Tríceps Testa Cross</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">10</font></td>
+                            <td align="center"><font size="4" face="tahoma"></font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador4 /></font></td>
+                            
+                        </tr>
+                        <tr bgcolor="LightBlue">
+                            <td><font size="4" face="tahoma">Tríceps Coice Halter</font></td>
+                            <td align="center"><font size="4" face="tahoma">4X</font></td>
+                            <td align="center"><font size="4" face="tahoma">10</font></td>
+                            <td align="center"><font size="4" face="tahoma"></font></td>
+                            <td align="center"><font size="4" face="tahoma"><Contador5 /></font></td>
+                            
+                        </tr>
+                    </table>
+                    <p align="center">
+                        <button onClick={atualiza}><font size="4" face="tahoma">&nbsp;Reload&nbsp;</font></button>
+                    </p>
+                </div>
+            </table>
+            <table border="0" width="100%">
                 <tr>
-                    <td><font size="4" face="tahoma">Supino Reto Barra</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador /></font></td>                    
-                </tr>
-                <tr bgcolor="LightBlue">
-                    <td><font size="4" face="tahoma">Crucifixo</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador1 /></font></td>                    
-                </tr>
-                <tr>
-                    <td><font size="4" face="tahoma">Supino Incl. Halteres</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador2 /></font></td>
-                </tr>
-                <tr bgcolor="LightBlue">
-                    <td><font size="4" face="tahoma">Flexão de Braços</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador3 /></font></td>
-                </tr>
-                <tr>
-                    <td><font size="4" face="tahoma">Tríceps Testa Cross</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador4 /></font></td>
-                </tr>
-                <tr bgcolor="LightBlue">
-                    <td><font size="4" face="tahoma">Tríceps Coice Halter</font></td>
-                    <td align="center"><font size="4" face="tahoma"><Contador5 /></font></td>
+                    <td align="left"><font size="1" face="tahoma"><a href="mailto:markuz.rocha@gmail.com">Marcos Rocha</a></font></td>
+                    <td align="right"><font size="1" face="tahoma">v1.2</font></td>
                 </tr>
             </table>
-            <div align="right">
-                <font size="3" face="tahoma">v1.1</font>
-            </div>
-            <p align="center">
-                <button STYLE="padding:8px" onClick={atualiza}><font size="4" face="tahoma">&nbsp;Reload&nbsp;</font></button>
-            </p>
         </div>
     )
 }
